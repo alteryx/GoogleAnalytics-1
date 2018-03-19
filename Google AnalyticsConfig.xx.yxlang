@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AlteryxJavaScriptPlugin>
+  <Properties>
+    <MetaInfo>
+      <NameIsFileName value="false" />
+      <Name>⇚⇚Google Analytics⇚⇚</Name>
+      <Description>⇚⇚⇚⇚⇚⇚⇚⇚⇚⇚Read and query data from Google Analytics Core Reporting API.  v7.0.5⇚⇚⇚⇚⇚⇚⇚⇚⇚⇚</Description>
+      <RootToolName>Google_Analytics.yxmc</RootToolName>
+      <ToolVersion>7</ToolVersion>
+      <ToolInDb value="False" />
+      <CategoryName>⇚⇚Connectors⇚⇚</CategoryName>
+      <SearchTags>⇚cloud⇚,⇚connector⇚,⇚input⇚,⇚web⇚,⇚internet⇚,⇚google⇚,⇚⇚⇚connectors category⇚⇚⇚,⇚API⇚,⇚download⇚,⇚analytics⇚,⇚adwords⇚</SearchTags>
+      <Author>Alteryx, Inc.</Author>
+      <Company>Alteryx, Inc.</Company>
+      <Copyright>2017 Alteryx, Inc.  All Rights Reserved.</Copyright>
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+  </Properties>
+</AlteryxJavaScriptPlugin>

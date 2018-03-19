@@ -18,20 +18,20 @@ Google Analytics Input GUI
 <body>
 <!-- 1st view - Online or Offline Mode -->
     <fieldset id="accessMethod" style="display:none">
-        <legend>XMSG("Sign in to Google Analytics")</legend>
+        <legend>Sign in to Google Analytics</legend>
         <table>
             <tbody>
                 <tr>
                     <td>
-                    <button style="width:116px;" type="submit" id="onlineMode" onclick="resetFields();login();">XMSG("Online")</button><br/><br/>
-                    XMSG("Sign in using Google Analytics credentials. This option requires re-entering credentials every 60 minutes or any time a new workflow is opened.")
+                    <button style="width:116px;" type="submit" id="onlineMode" onclick="resetFields();login();">Online</button><br/><br/>
+                    Sign in using Google Analytics credentials. This option requires re-entering credentials every 60 minutes or any time a new workflow is opened.
                     </td>
                 </tr>
                 <tr><td height="3"></td></tr>
                 <tr>
                     <td>
-                    <button style="width:116px;" type="submit" id="offlineMode" onclick="resetFields();setPage('#offlineCreds');">XMSG("Offline")</button><br/><br/>
-                    XMSG("Sign in using API credentials. This option requires obtaining a Client ID, Secret, and Token and does not require re-entering credentials to run a workflow.")
+                    <button style="width:116px;" type="submit" id="offlineMode" onclick="resetFields();setPage('#offlineCreds');">Offline</button><br/><br/>
+                    Sign in using API credentials. This option requires obtaining a Client ID, Secret, and Token and does not require re-entering credentials to run a workflow.
                     </td>
                 </tr>
             </tbody>
@@ -44,44 +44,44 @@ Google Analytics Input GUI
         <br/>
         <br/>
         <br/>
-        <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+        <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
     </fieldset>
 
 <!-- 1b view - Offline credentials -->
     <fieldset id="offlineCreds" style="display:none">
-        <legend>XMSG("Enter Google Analytics credentials")</legend>
-        <label for="dataItemClientID">XMSG("Client ID")</label>
+        <legend>Enter Google Analytics credentials</legend>
+        <label for="dataItemClientID">Client ID</label>
         <alteryx-pluginwidget type="TextBox" id="dataItemClientID" dataName="client_id"></alteryx-pluginwidget>
         <br/>
-        <label>XMSG("Client Secret")</label>
+        <label>Client Secret</label>
         <alteryx-pluginwidget type="TextBox" password="true" id="dataItemClientSecret" dataName="client_secret"></alteryx-pluginwidget>
         <br/>
-        <label>XMSG("Refresh Token")</label>
+        <label>Refresh Token</label>
         <alteryx-pluginwidget type="TextBox" password="true" id="dataItemRefreshToken" dataName="refresh_token"></alteryx-pluginwidget>
         <div id="offlineConnectionErrorMessage" style="height: 0px;"></div>
         <div class='footer_spacer' style="height: 100px;"></div>
         <div class='footer'>
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
-                <button type="submit" style="float: right" id="connect_button" onclick="getAccessTokenAjaxCall();">XMSG("Connect")</button>
+                <button type="submit" style="float: right" id="connect_button" onclick="getAccessTokenAjaxCall();">Connect</button>
              </div>
         <br>
         <br>
-        <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+        <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
 <!-- Account/WebProperties/Profiles Selectors fieldset -->
     <fieldset id="profileSelectors" style="display:none;">
-        <legend>XMSG("Select an Account, WebProperty, and Profile")</legend>
+        <legend>Select an Account, WebProperty, and Profile</legend>
         <p style="margin: 10px;"></p>
-        <p class="accountInfoSubheaders">XMSG("Available Accounts")</p>
+        <p class="accountInfoSubheaders">Available Accounts</p>
         <alteryx-pluginwidget type="DropDown"  id="accountsList" dataName="accountsList"></alteryx-pluginwidget>
         <p style="margin: 20px;"></p>
-        <p class="accountInfoSubheaders">XMSG("Available WebProperties")</p>
+        <p class="accountInfoSubheaders">Available WebProperties</p>
         <alteryx-pluginwidget type="DropDown"  id="webPropertiesList" dataName="webPropertiesList"></alteryx-pluginwidget>
         <p style="margin: 20px;"></p>
-        <p class="accountInfoSubheaders">XMSG("Available Profiles")</p>
+        <p class="accountInfoSubheaders">Available Profiles</p>
         <alteryx-pluginwidget type="DropDown"  id="profilesList" dataName="profilesList"></alteryx-pluginwidget>
         <p style="margin: 5px;"></p>
         <div class='footer_spacer'></div>
@@ -89,40 +89,40 @@ Google Analytics Input GUI
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
                 <!-- Add id name and onclick function during process story -->
-                <button type="submit" class="nextBtn" id="profileSelectorsNextBtn" onclick="setPage('#datePickers');">XMSG("Next")</button>
+                <button type="submit" class="nextBtn" id="profileSelectorsNextBtn" onclick="setPage('#datePickers');">Next</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
     <!-- Date Pickers fieldset -->
     <fieldset id="datePickers" style="display:none;"><!--Add a display:none during process story-->
-        <legend>XMSG("Select Dates to Include")</legend>
+        <legend>Select Dates to Include</legend>
         <div id="preDefDateRange">
-            <label for="preDefDropDown">XMSG("Preset Date Range")</label>
+            <label for="preDefDropDown">Preset Date Range</label>
             <alteryx-pluginwidget type="DropDown" id="preDefDropDown" dataName="preDefDropDown">
-                <alteryx-option uiobject='XMSG("Custom")'>custom</alteryx-option>
-                <alteryx-option uiobject='XMSG("Today")'>today</alteryx-option>
-                <alteryx-option uiobject='XMSG("Yesterday")'>yesterday</alteryx-option>
-                <alteryx-option uiobject='XMSG("Last 7 Days")'>last7Days</alteryx-option>
-                <alteryx-option uiobject='XMSG("Last Week")'>lastWeek</alteryx-option>
-                <alteryx-option uiobject='XMSG("Last 30 Days")'>last30Days</alteryx-option>
-                <alteryx-option uiobject='XMSG("Last Month")'>lastMonth</alteryx-option>
-                <alteryx-option uiobject='XMSG("Month to Date")'>monthToDate</alteryx-option>
-                <alteryx-option uiobject='XMSG("Year to Date")'>yearToDate</alteryx-option>
-                <alteryx-option uiobject='XMSG("Last Year")'>lastYear</alteryx-option>
+                <alteryx-option uiobject="Custom">custom</alteryx-option>
+                <alteryx-option uiobject="Today">today</alteryx-option>
+                <alteryx-option uiobject="Yesterday">yesterday</alteryx-option>
+                <alteryx-option uiobject="Last 7 Days">last7Days</alteryx-option>
+                <alteryx-option uiobject="Last Week">lastWeek</alteryx-option>
+                <alteryx-option uiobject="Last 30 Days">last30Days</alteryx-option>
+                <alteryx-option uiobject="Last Month">lastMonth</alteryx-option>
+                <alteryx-option uiobject="Month to Date">monthToDate</alteryx-option>
+                <alteryx-option uiobject="Year to Date">yearToDate</alteryx-option>
+                <alteryx-option uiobject="Last Year">lastYear</alteryx-option>
             </alteryx-pluginwidget>
         </div>
         <br>
         <div id="startDate" class="datePicker">
-            <label for="startDatePicker" class="datePickerLabel">XMSG("Start")</label>
+            <label for="startDatePicker" class="datePickerLabel">Start</label>
             <alteryx-pluginwidget type="DateTimeField" dateFormat="YYYY-MM-DD" id="startDatePicker" dataType="SimpleDate" dataName="startDatePicker">
             </alteryx-pluginwidget>
         </div>
         <div id="endDate" class="datePicker">
-            <label for="endDatePicker" class="datePickerLabel">XMSG("End")</label>
+            <label for="endDatePicker" class="datePickerLabel">End</label>
             <alteryx-pluginwidget type="DateTimeField" dateFormat="YYYY-MM-DD" id="endDatePicker" dataType="SimpleDate" dataName="endDatePicker"></alteryx-pluginwidget>
         </div>
         <div id="dateWarning" style="z-index: 99999; height:0px;"></div>
@@ -131,25 +131,25 @@ Google Analytics Input GUI
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
                 <!-- Add id name and onclick function during process story -->
-                <button type="submit" class="nextBtn" id="datePickersNextBtn" onclick="setPage('#metrics')">XMSG("Next")</button>
-                <button class="prevBtn" id="datePickersPrevBtn" onclick="setPage('#profileSelectors')">XMSG("Previous")</button>
+                <button type="submit" class="nextBtn" id="datePickersNextBtn" onclick="setPage('#metrics')">Next</button>
+                <button class="prevBtn" id="datePickersPrevBtn" onclick="setPage('#profileSelectors')">Previous</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
 <!-- Metrics fieldset -->
     <fieldset id="metrics" style="display:none;"><!--Add a display:none during process story-->
-        <legend>XMSG("Select Metrics and Goals to Include")</legend>
+        <legend>Select Metrics and Goals to Include</legend>
         <hr>
-        <p class="selectionLegend">XMSG("Choose a combined maximum of 10 metrics and goals...")</p>
-        <p class="listboxLegend">XMSG("Metrics")</p>
+        <p class="selectionLegend">Choose a combined maximum of 10 metrics and goals...</p>
+        <p class="listboxLegend">Metrics</p>
         <div id="metricBubbleMessage" text-center='true'></div>
         <alteryx-pluginwidget type="ListBox" datatype="MultiStringSelector"
           ismultiselect="true" issearchable="true" id="metricsList" dataName="metricsList" showsearchrow="true"></alteryx-pluginwidget>
-        <p class="listboxLegend">XMSG("Goals")</p>
+        <p class="listboxLegend">Goals</p>
         <alteryx-pluginwidget type="ListBox" datatype="MultiStringSelector"
           ismultiselect="true" issearchable="true" id="metricsGoalsList" dataName="metricsGoalsList" showsearchrow="true"></alteryx-pluginwidget>
         <div id="selectedMetrics"></div>
@@ -158,21 +158,21 @@ Google Analytics Input GUI
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
                 <!-- Add id name and onclick function during process story -->
-                <button type="submit" class="nextBtn" id="metricsNextBtn" onclick="setPage('#dimensions')">XMSG("Next")</button>
-                <button class="prevBtn" id="metricsPrevBtn" onclick="setPage('#datePickers')">XMSG("Previous")</button>
+                <button type="submit" class="nextBtn" id="metricsNextBtn" onclick="setPage('#dimensions')">Next</button>
+                <button class="prevBtn" id="metricsPrevBtn" onclick="setPage('#datePickers')">Previous</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
 <!-- Dimensions fieldset -->
     <fieldset id="dimensions" style="display:none;"><!--Add a display:none during process story-->
-        <legend>XMSG("Select Dimensions to Include (Optional)")</legend>
+        <legend>Select Dimensions to Include (Optional)</legend>
         <hr>
-        <p class="selectionLegend">XMSG("Choose a combined maximum of 7 dimensions...")</p>
-        <p class="listboxLegend">XMSG("Dimensions")</p>
+        <p class="selectionLegend">Choose a combined maximum of 7 dimensions...</p>
+        <p class="listboxLegend">Dimensions</p>
         <div id="dimensionBubbleMessage"></div>
         <alteryx-pluginwidget type="ListBox" datatype="MultiStringSelector"
           ismultiselect="true" issearchable="true" id="dimensionsList" dataName="dimensionsList" showsearchrow="true"></alteryx-pluginwidget>
@@ -182,30 +182,30 @@ Google Analytics Input GUI
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
             <!-- Add id name and onclick function during process story -->
-            <button type="submit" class="nextBtn" id="dimensionsNextBtn" onclick="setPage('#segments')">XMSG("Next")</button>
-            <button class="prevBtn" id="dimensionsPrevBtn" onclick="setPage('#metrics')">XMSG("Previous")</button>
+            <button type="submit" class="nextBtn" id="dimensionsNextBtn" onclick="setPage('#segments')">Next</button>
+            <button class="prevBtn" id="dimensionsPrevBtn" onclick="setPage('#metrics')">Previous</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
 <!-- Segments fieldset -->
     <fieldset id="segments" style="display:none;"><!--Add a display:none during process story-->
-        <legend>XMSG("Select Segments to Include (Optional)")</legend>
+        <legend>Select Segments to Include (Optional)</legend>
         <hr>
-        <p class="selectionLegend">XMSG("Choose a maximum of 4 segments...")</p>
-        <p class="listboxLegend">XMSG("Segments")</p>
+        <p class="selectionLegend">Choose a maximum of 4 segments...</p>
+        <p class="listboxLegend">Segments</p>
         <div id="segmentBubbleMessage"></div>
         <alteryx-pluginwidget type="ListBox" datatype="MultiStringSelector"
           ismultiselect="true" issearchable="true" id="segmentsList" dataName="segmentsList" showsearchrow="true"></alteryx-pluginwidget>
         <div id="selectedSegments"></div>
         <div id="advOptions">
-            <alteryx-pluginwidget type="CheckBox" showAsToggle="true" id="advOptions" dataName="advOptions" text='XMSG("Additional Options")'></alteryx-pluginwidget>
+            <alteryx-pluginwidget type="CheckBox" showAsToggle="true" id="advOptions" dataName="advOptions" text="Additional Options"></alteryx-pluginwidget>
         </div>
         <div id="maxResults" style="margin-left: 20px;">
-            <label for="maxResults">XMSG("Maximum Results")</label>
+            <label for="maxResults">Maximum Results</label>
             <alteryx-pluginwidget type="NumericSpinner" id="maxResults" default="10000" min="0" max="10000000" step="1000" dataName="maxResults"></alteryx-pluginwidget>
         </div>
         <div class='footer_spacer'></div>
@@ -213,28 +213,28 @@ Google Analytics Input GUI
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
                 <!-- Add id name and onclick function during process story -->
-                <button type="submit" class="nextBtn" id="segmentsNextBtn" onclick="setPage('#summary');">XMSG("Done")</button>
-                <button class="prevBtn" id="segmentsPrevBtn" onclick="setPage('#dimensions')">XMSG("Previous")</button>
+                <button type="submit" class="nextBtn" id="segmentsNextBtn" onclick="setPage('#summary');">Done</button>
+                <button class="prevBtn" id="segmentsPrevBtn" onclick="setPage('#dimensions')">Previous</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
 <!-- Fieldset to display configuration summary -->
     <fieldset id="summary" style="display:none">
-        <legend>XMSG("Configuration Summary")</legend>
+        <legend>Configuration Summary</legend>
         <div id="summaryDiv"></div>
         <div class='footer_spacer'></div>
         <div class='footer'>
             <hr>
             <div style="margin-top: 8px;margin-bottom: 8px;">
-                <button class="prevBtn" id="previous" onclick="setPage('#segments');">XMSG("Previous")</button>
+                <button class="prevBtn" id="previous" onclick="setPage('#segments');">Previous</button>
             </div>
             <br>
             <br>
-            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">XMSG("Change Login Credentials")</a>
+            <a href="javascript:void(0)" onclick="resetFields();setPage('#accessMethod');myIFrame.location='https://www.google.com/accounts/Logout';">Change Login Credentials</a>
         </div>
     </fieldset>
 
@@ -257,5 +257,6 @@ Google Analytics Input GUI
     </svg>
     </div>
 <!--     <div class="loading-inner"><p>Data Loading from Google</p> -->
-    <script type="text/javascript" src='bundle.js'></script>
+<script type="text/javascript" src='bundle.js'>
+</script>
 </body>

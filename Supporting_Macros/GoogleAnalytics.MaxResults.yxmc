@@ -16,8 +16,6 @@
             <Fields orderChanged="False">
               <Field name="Authorization" />
               <Field name="fullQueryURL" selected="False" />
-              <Field name="maxResults" selected="False" />
-              <Field name="advOptions" selected="False" />
               <Field name="*Unknown" selected="False" />
             </Fields>
           </Headers>
@@ -28,8 +26,6 @@
             <ComposeFields orderChanged="False">
               <Field name="fullQueryURL" selected="False" />
               <Field name="Authorization" selected="False" />
-              <Field name="maxResults" selected="False" />
-              <Field name="advOptions" selected="False" />
               <Field name="*Unknown" selected="False" />
             </ComposeFields>
           </Payload>
@@ -47,9 +43,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="TextInput:" type="Bool" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
           </RecordInfo>
@@ -87,17 +80,11 @@
               <Fields>
                 <Field name="fullQueryURL" />
                 <Field name="Authorization" />
-                <Field name="maxResults" />
-                <Field name="advOptions" />
-                <Field name="iterationLimit" />
               </Fields>
               <Data>
                 <r>
                   <c>________________________________placeholder_____________________________________</c>
                   <c>_________________________________authorization_______________________________________</c>
-                  <c>__________maxResultsPlaceholder______________</c>
-                  <c>__________advOptionsPlaceholder______________</c>
-                  <c />
                 </r>
               </Data>
             </Configuration>
@@ -112,9 +99,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="80" source="TextInput:" type="String" />
             <Field name="Authorization" size="85" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="TextInput:" type="Bool" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -122,7 +106,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="606" y="114" />
+        <Position x="414" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -138,9 +122,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
           </RecordInfo>
@@ -149,9 +130,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
           </RecordInfo>
@@ -161,7 +139,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
-        <Position x="702" y="114" />
+        <Position x="510" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -178,9 +156,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
             <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
             <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
@@ -191,7 +166,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="798" y="114" />
+        <Position x="606" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -213,9 +188,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
             <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
             <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
@@ -225,9 +197,6 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
             <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
             <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
@@ -255,7 +224,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="990" y="114" />
+        <Position x="798" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -272,7 +241,7 @@
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="894" y="114" />
+        <Position x="702" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -293,9 +262,6 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
             <Field name="fullQueryURL" size="1073741823" source="JSONParse: " type="V_WString" />
           </RecordInfo>
         </MetaInfo>
@@ -304,7 +270,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="138" y="54" />
+        <Position x="126" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -324,96 +290,20 @@
           <RecordInfo>
             <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
             <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="TextInput:" type="Bool" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="19">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="414" y="114" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="[iterationLimit] - 1" field="iterationLimit" size="1" type="Bool" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[iterationLimit = [iterationLimit] - 1
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
-            <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="20">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="510" y="114" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression><![CDATA[[iterationLimit] = 0 AND [advOptions]
-
-]]></Expression>
-          <Mode>Custom</Mode>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[[iterationLimit] = 0 AND [advOptions]
-
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="True">
-          <RecordInfo>
-            <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
-            <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="False">
-          <RecordInfo>
-            <Field name="fullQueryURL" size="1000000" source="TextInput:" type="V_WString" />
-            <Field name="Authorization" size="100000" source="TextInput:" type="String" />
-            <Field name="maxResults" size="45" source="TextInput:" type="String" />
-            <Field name="advOptions" size="45" source="TextInput:" type="String" />
-            <Field name="iterationLimit" source="Formula: [iterationLimit] - 1" type="Bool" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="15" Connection="Input" />
+      <Destination ToolID="7" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
-      <Destination ToolID="19" Connection="Input" />
+      <Destination ToolID="15" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="3" Connection="Output" />
@@ -438,14 +328,6 @@
     <Connection>
       <Origin ToolID="18" Connection="Output" />
       <Destination ToolID="1" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="19" Connection="Output" />
-      <Destination ToolID="20" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="20" Connection="False" />
-      <Destination ToolID="7" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -531,14 +413,14 @@
       </Questions>
       <ModuleType>Macro</ModuleType>
       <MacroCustomHelp value="False" />
-      <MacroDynamicOutputFields value="True" />
+      <MacroDynamicOutputFields value="False" />
       <MacroImageStd value="39" />
       <MacroInputs />
       <MacroOutputs />
       <IterativeMacro>
         <Input>Input</Input>
         <Output>Iterate</Output>
-        <IterationLimit value="999999" />
+        <IterationLimit value="9999" />
         <LimitBehavior>Error</LimitBehavior>
         <OutputMode>AutoByName</OutputMode>
       </IterativeMacro>

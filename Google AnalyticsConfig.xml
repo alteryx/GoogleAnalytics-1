@@ -17,7 +17,7 @@
     <MetaInfo>
       <NameIsFileName value="false" />
       <Name>Google Analytics</Name>
-      <Description>Read and query data from Google Analytics Core Reporting API.  v7.0.2</Description>
+      <Description>Read and query data from Google Analytics Core Reporting API.  v7.0.5</Description>
       <RootToolName>Google_Analytics.yxmc</RootToolName>
       <ToolVersion>7</ToolVersion>
       <ToolInDb value="False" />
