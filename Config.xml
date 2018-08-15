@@ -4,10 +4,10 @@
       <MetaInfo>
          <Name>Google Analytics</Name>
          <Description>Read and query data from Google Analytics Core Reporting API.</Description>
-         <ToolVersion>7.0.5</ToolVersion>
+         <ToolVersion>7.0.7</ToolVersion>
          <CategoryName>Connectors</CategoryName>
          <Author>Alteryx</Author>
-         <Icon>Google Analytics\Google AnalyticsIcon.png</Icon>
+         <Icon>GoogleAnalytics_v7.0.0\Google AnalyticsIcon.png</Icon>
       </MetaInfo>
    </Properties>
 </AlteryxJavaScriptPlugin>
