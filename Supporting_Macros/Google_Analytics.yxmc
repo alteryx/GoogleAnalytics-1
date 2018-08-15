@@ -1066,7 +1066,7 @@ Authorization=Authorization
                   </RecordInfo>
                 </MetaInfo>
               </Properties>
-              <EngineSettings Macro="Google Analytics\Supporting_Macros\GoogleAnalytics.MaxResults.yxmc" />
+              <EngineSettings Macro=".\GoogleAnalytics.MaxResults.yxmc" />
             </Node>
             <Node ToolID="272">
               <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -1878,7 +1878,7 @@ Input=DownloadData
                   </RecordInfo>
                 </MetaInfo>
               </Properties>
-              <EngineSettings Macro="Google Analytics\Supporting_Macros\GoogleAnalytics.ParseResults.yxmc" />
+              <EngineSettings Macro=".\GoogleAnalytics.ParseResults.yxmc" />
             </Node>
             <Node ToolID="322">
               <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">

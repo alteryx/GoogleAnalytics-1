@@ -3,7 +3,7 @@
 	The variables [Engine.EngineDirectory], [Engine.PluginDirectory]
 	and [Engine.JavaScriptPluginDirectory] can also be used-->
 <AlteryxJavaScriptPlugin>
-  <EngineSettings EngineDllEntryPoint="Google Analytics\Supporting_Macros\Google_Analytics.yxmc" EngineDll="Macro" SDKVersion="10.1"/>
+  <EngineSettings EngineDllEntryPoint="GoogleAnalytics_v7.0.0\Supporting_Macros\Google_Analytics.yxmc" EngineDll="Macro" SDKVersion="10.1"/>
   <GuiSettings Html="Google AnalyticsGui.html" Icon="Google AnalyticsIcon.png" Help="GoogleAnalyticsInput.htm" SDKVersion="10.1">
     <InputConnections>
       <!--Connection Name="Input" AllowMultiple="False" Optional="True" Type="Connection" Label=""/-->
@@ -17,15 +17,15 @@
     <MetaInfo>
       <NameIsFileName value="false" />
       <Name>Google Analytics</Name>
-      <Description>Read and query data from Google Analytics Core Reporting API.  v7.0.5</Description>
-      <RootToolName>Google_Analytics.yxmc</RootToolName>
+      <Description>Read and query data from Google Analytics Core Reporting API.  v7.0.7</Description>
+      <RootToolName>Google_Analytics_v6.yxmc</RootToolName>
       <ToolVersion>7</ToolVersion>
       <ToolInDb value="False" />
       <CategoryName>Connectors</CategoryName>
       <SearchTags>cloud,connector,input,web,internet,google,connectors category,API,download,analytics,adwords</SearchTags>
       <Author>Alteryx, Inc.</Author>
       <Company>Alteryx, Inc.</Company>
-      <Copyright>2017 Alteryx, Inc.  All Rights Reserved.</Copyright>
+      <Copyright>2018 Alteryx, Inc.  All Rights Reserved.</Copyright>
 	  <DescriptionLink actual="" displayed="" />
     </MetaInfo>
   </Properties>
